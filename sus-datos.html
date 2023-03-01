@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar consulta sobre las pastillas abortivas Cytotec</title>
+    <meta name="description" content="Vendemos pastillas Cytotec originales del laboratorio Pfizer, cada pastilla contiene 200 mg y viene sellado en su respectivao blister, presenta la fecha de elaboración, fecha de caducidad, registro sanitario y las características por dentro.">
+    <meta name="robots" content="noindex" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/png">
+    <link rel="canonical" href="https://farmacias-cytotec-peru.shop/sus-datos" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+            min-height: 100vh;
+            background-color: antiquewhite;
+            background-image: url('images/fondocytotec.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .cuadro {
+            width: 96%;
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .compromiso {
+            width: 50%;
+            color: #1a2f4e;
+            text-align: center;
+        }   
+        .compromiso h1 {
+            margin-bottom: 2rem;
+        }
+        .compromiso p {
+            font-size: 18px;
+            line-height: 1.5rem;
+            color: white;
+            text-shadow: 0 .2rem .3rem #1a2f4e;
+        }
+        .compromiso img {
+            margin-top: 2rem;
+            width: 60%;
+        }
+        .contenedor-formulario {
+            width: 35%;
+            margin: 0 auto;
+            border: 4px solid #ffffff;
+            padding: 2rem;
+            font-size: 1.2rem;
+            color: white;
+        }  
+        .contenedor-formulario > form > * {
+            display: block;
+        }
+        .contenedor-formulario input[type="text"] {
+            width: 100%;
+            padding: .5rem;
+            margin-bottom: 1rem;
+            font: inherit; 
+            color: #1a2f4e;
+            border: 5px solid transparent;
+            border-radius: .5rem;
+            transition: .2s all;
+        }
+        .contenedor-formulario input[type="text"]:focus {
+            border-color: #1a2f4e;
+            outline: 0;
+        }
+        .contenedor-formulario label {
+            margin-bottom: .5rem;
+        }
+        .contenedor-formulario textarea {
+            width: 100%;
+            padding: .5rem;
+            margin-bottom: 2rem;
+            font: inherit; 
+            color: #1a2f4e;
+            border: 5px solid transparent;
+            height: 200px;
+            resize: none;
+            border-radius: .5rem;
+            outline: 0;
+            transition: .2s all;
+        }
+        .contenedor-formulario textarea:focus {
+            border-color: #1a2f4e;
+        }
+        .contenedor-formulario input[type="submit"] { 
+            width: 300px;
+            max-width: 100%;
+            font: inherit;
+            padding: 1rem;
+            border: none;
+            border-radius: .2rem;
+            background-color: #0ed439; 
+            margin-bottom: 1rem;
+            color: white;
+            outline: 0;
+            margin-left: auto;
+            transition: all .4s;
+        }
+        .contenedor-formulario input[type="submit"]:hover, 
+        .contenedor-formulario input[type="submit"]:active {
+            box-shadow: 0 .7rem 1rem #026419; 
+        }
+        @media screen and (max-width: 1250px){
+            .compromiso img {
+                width: 100%;
+            }
+            .contenedor-formulario {
+                width: 40%;
+                margin: 0 0 0 auto;
+            }
+        }
+        @media screen and (max-width: 800px){
+            body { 
+                background-image: url('images/fondocytotec-movil.svg');
+            }
+            .compromiso img { 
+                display: none;
+            }
+            .compromiso, .contenedor-formulario {
+                margin-top: 1rem;
+                width: 100%;
+            }
+            .contenedor-formulario {
+                background-color: rgba(26, 47, 78, 0.562);
+            }
+            .contenedor-formulario input[type="submit"] {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cuadro">
+        <div class="compromiso">
+            <h1>LA CONSULTA ES TOTALMENTE GRATIS</h1>
+            <p>Vendemos pastillas Cytotec originales del laboratorio Pfizer, cada pastilla contiene 200 mg y viene sellado en su respectivao blister, presenta la fecha de elaboración, fecha de caducidad, registro sanitario y las características por dentro.</p>
+            <img src="images/caja-medicamentos.png" alt="cajas de medicamento cytotec">
+        </div>
+
+        <div class="contenedor-formulario">
+            <form action="enviarCorreoPHPMailer.php" id="formulario" method="POST">
+                <label for="celular">Celular</label>
+                <input type="text" id="celular" required name="celular"> 
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required name="nombre">
+                <label for="lugar">Lugar donde vive</label>
+                <input type="text" id="lugar" required name="lugar"> 
+
+                <label for="consulta">Hacer consulta</label>
+                <textarea required name="consulta" id="consulta"></textarea>
+
+                <input type="submit" id="boton-envio" value="Enviar">
+            </form>
+            <span class="aviso-campos"><small>* todos los campos son requeridos</small></span>
+        </div>
+
+    </div> 
+</body>
+</html>

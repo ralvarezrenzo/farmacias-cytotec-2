@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://farmacias-cytotec-peru.shop/sitemap.xml
